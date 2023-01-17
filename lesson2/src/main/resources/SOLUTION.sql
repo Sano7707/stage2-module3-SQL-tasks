@@ -13,7 +13,7 @@ insert into student(name,birthday,groupnumber) values ('Karen','2000-07-07',5);
 insert into student(name,birthday,groupnumber) values ('Gugo','2000-07-07',5);
 
 insert into subject(name,grade) values ('Art',1);
-insert into subject(name,grade) values ('Geogrpahy',2);
+insert into subject(name,grade) values ('Geography',2);
 insert into subject(name,grade) values ('History',2);
 insert into subject(name,grade) values ('PE',3);
 insert into subject(name,grade) values ('Math',3);
