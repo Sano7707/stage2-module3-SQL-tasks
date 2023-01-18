@@ -1,2 +1,3 @@
-SELECT subject.id,subject.name,subject.description,subject.grade,AVG(mark) as avmark from subject join mark on subject.id = mark.subject_id having avg(mark) > avmark;
-select student.id,student.name,student.birthday,student.groupnumber,avg(amount) as avvg from student join payment on student.id = payment.student_id having amount < avvg;
+select * from subject where id in (select subject_id from mark group by subject_id having avg(mark) > (select avg(mark) from mark));
+select * from student where id in (select student_id from payment where amount < (select avg(amount) from payment));
+
